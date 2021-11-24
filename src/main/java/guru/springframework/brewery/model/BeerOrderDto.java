@@ -1,4 +1,4 @@
-package guru.springframework.msscbeerorderservice.web.model;
+package guru.springframework.brewery.model;
 
 import guru.springframework.msscbeerorderservice.domain.BeerOrderStatusEnum;
 import lombok.Builder;

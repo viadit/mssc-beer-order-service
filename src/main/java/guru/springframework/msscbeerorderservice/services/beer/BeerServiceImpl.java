@@ -1,9 +1,8 @@
 package guru.springframework.msscbeerorderservice.services.beer;
 
-import guru.springframework.msscbeerorderservice.web.model.BeerDto;
+import guru.springframework.brewery.model.BeerDto;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.web.client.RestTemplateBuilder;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 

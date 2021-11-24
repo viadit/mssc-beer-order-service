@@ -1,11 +1,11 @@
 package guru.springframework.msscbeerorderservice.web.mappers;
 
+import guru.springframework.brewery.model.BeerOrderDto;
+import guru.springframework.brewery.model.BeerOrderDto.BeerOrderDtoBuilder;
+import guru.springframework.brewery.model.BeerOrderLineDto;
 import guru.springframework.msscbeerorderservice.domain.BeerOrder;
 import guru.springframework.msscbeerorderservice.domain.BeerOrderLine;
 import guru.springframework.msscbeerorderservice.domain.Customer;
-import guru.springframework.msscbeerorderservice.web.model.BeerOrderDto;
-import guru.springframework.msscbeerorderservice.web.model.BeerOrderDto.BeerOrderDtoBuilder;
-import guru.springframework.msscbeerorderservice.web.model.BeerOrderLineDto;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2021-11-24T17:39:13+0530",
+    date = "2021-11-24T19:42:32+0530",
     comments = "version: 1.3.1.Final, compiler: javac, environment: Java 15.0.2 (Oracle Corporation)"
 )
 @Component

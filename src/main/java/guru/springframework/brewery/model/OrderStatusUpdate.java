@@ -1,4 +1,4 @@
-package guru.springframework.msscbeerorderservice.web.model;
+package guru.springframework.brewery.model;
 
 import lombok.Builder;
 import lombok.Data;
