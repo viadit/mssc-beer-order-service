@@ -2,7 +2,7 @@ package guru.springframework.msscbeerorderservice.services;
 
 import guru.springframework.msscbeerorderservice.domain.BeerOrder;
 import guru.springframework.msscbeerorderservice.domain.Customer;
-import guru.springframework.msscbeerorderservice.domain.OrderStatusEnum;
+import guru.springframework.msscbeerorderservice.domain.BeerOrderStatusEnum;
 import guru.springframework.msscbeerorderservice.repositories.BeerOrderRepository;
 import guru.springframework.msscbeerorderservice.repositories.CustomerRepository;
 import guru.springframework.msscbeerorderservice.web.mappers.BeerOrderMapper;
@@ -67,7 +67,7 @@ public class BeerOrderServiceImpl implements BeerOrderService{
             BeerOrder beerOrder = beerOrderMapper.dtoToBeerOrder(beerOrderDto);
             beerOrder.setId(null);
             beerOrder.setCustomer(customerOptional.get());
-            beerOrder.setOrderStatus(OrderStatusEnum.NEW);
+            beerOrder.setOrderStatus(BeerOrderStatusEnum.NEW);
 
             beerOrder.getBeerOrderLines().forEach(line -> line.setBeerOrder(beerOrder));
 
@@ -88,7 +88,7 @@ public class BeerOrderServiceImpl implements BeerOrderService{
     @Override
     public void pickUpOrder(UUID customerId, UUID orderId) {
         BeerOrder beerOrder = getOrder(customerId, orderId);
-        beerOrder.setOrderStatus(OrderStatusEnum.PICKED_UP);
+        beerOrder.setOrderStatus(BeerOrderStatusEnum.PICKED_UP);
 
         beerOrderRepository.save(beerOrder);
     }
