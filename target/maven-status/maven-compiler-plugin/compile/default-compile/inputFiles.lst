@@ -1,8 +1,10 @@
 D:\mssc-beer-order-service\src\main\java\guru\springframework\msscbeerorderservice\repositories\BeerOrderLineRepository.java
+D:\mssc-beer-order-service\src\main\java\guru\springframework\msscbeerorderservice\services\BeerOrderManagerImpl.java
 D:\mssc-beer-order-service\src\main\java\guru\springframework\brewery\model\CustomerDto.java
 D:\mssc-beer-order-service\src\main\java\guru\springframework\brewery\model\BeerOrderPagedList.java
 D:\mssc-beer-order-service\src\main\java\guru\springframework\msscbeerorderservice\web\mappers\BeerOrderLineMapper.java
 D:\mssc-beer-order-service\src\main\java\guru\springframework\msscbeerorderservice\domain\BaseEntity.java
+D:\mssc-beer-order-service\src\main\java\guru\springframework\msscbeerorderservice\statemachines\BeerOrderStateChangeInterceptor.java
 D:\mssc-beer-order-service\src\main\java\guru\springframework\msscbeerorderservice\services\BeerOrderServiceImpl.java
 D:\mssc-beer-order-service\src\main\java\guru\springframework\msscbeerorderservice\config\JmsConfig.java
 D:\mssc-beer-order-service\src\main\java\guru\springframework\msscbeerorderservice\domain\BeerOrder.java
@@ -10,12 +12,18 @@ D:\mssc-beer-order-service\src\main\java\guru\springframework\msscbeerorderservi
 D:\mssc-beer-order-service\src\main\java\guru\springframework\msscbeerorderservice\services\BeerOrderService.java
 D:\mssc-beer-order-service\src\main\java\guru\springframework\msscbeerorderservice\web\mappers\DateMapper.java
 D:\mssc-beer-order-service\src\main\java\guru\springframework\msscbeerorderservice\statemachines\BeerOrderStateMachineConfig.java
+D:\mssc-beer-order-service\src\main\java\guru\springframework\brewery\model\events\AllocateOrderRequest.java
 D:\mssc-beer-order-service\src\main\java\guru\springframework\brewery\model\BaseItem.java
+D:\mssc-beer-order-service\src\main\java\guru\springframework\brewery\model\events\ValidateOrderResult.java
 D:\mssc-beer-order-service\src\main\java\guru\springframework\brewery\model\BeerOrderDto.java
+D:\mssc-beer-order-service\src\main\java\guru\springframework\msscbeerorderservice\services\BeerOrderManager.java
+D:\mssc-beer-order-service\src\main\java\guru\springframework\msscbeerorderservice\statemachines\actions\AllocateOrderAction.java
 D:\mssc-beer-order-service\src\main\java\guru\springframework\msscbeerorderservice\domain\BeerOrderStatusEnum.java
 D:\mssc-beer-order-service\src\main\java\guru\springframework\msscbeerorderservice\services\beer\BeerServiceImpl.java
+D:\mssc-beer-order-service\src\main\java\guru\springframework\msscbeerorderservice\statemachines\actions\ValidateOrderAction.java
 D:\mssc-beer-order-service\src\main\java\guru\springframework\msscbeerorderservice\domain\BeerOrderEventsEnums.java
 D:\mssc-beer-order-service\src\main\java\guru\springframework\msscbeerorderservice\domain\Customer.java
+D:\mssc-beer-order-service\src\main\java\guru\springframework\msscbeerorderservice\services\listeners\ValidationResultListener.java
 D:\mssc-beer-order-service\src\main\java\guru\springframework\msscbeerorderservice\domain\BeerOrderLine.java
 D:\mssc-beer-order-service\src\main\java\guru\springframework\msscbeerorderservice\repositories\CustomerRepository.java
 D:\mssc-beer-order-service\src\main\java\guru\springframework\msscbeerorderservice\bootstrap\BeerOrderBootStrap.java
@@ -28,4 +36,5 @@ D:\mssc-beer-order-service\src\main\java\guru\springframework\brewery\model\Orde
 D:\mssc-beer-order-service\src\main\java\guru\springframework\msscbeerorderservice\repositories\BeerOrderRepository.java
 D:\mssc-beer-order-service\src\main\java\guru\springframework\msscbeerorderservice\web\mappers\BeerOrderMapper.java
 D:\mssc-beer-order-service\src\main\java\guru\springframework\brewery\model\BeerDto.java
+D:\mssc-beer-order-service\src\main\java\guru\springframework\brewery\model\events\ValidateOrderRequest.java
 D:\mssc-beer-order-service\src\main\java\guru\springframework\msscbeerorderservice\config\TaskConfig.java
