@@ -1,7 +1,7 @@
 package guru.springframework.msscbeerorderservice.statemachines;
 
 import guru.springframework.msscbeerorderservice.domain.BeerOrder;
-import guru.springframework.msscbeerorderservice.domain.BeerOrderEventsEnums;
+import guru.springframework.msscbeerorderservice.domain.BeerOrderEventEnum;
 import guru.springframework.msscbeerorderservice.domain.BeerOrderStatusEnum;
 import guru.springframework.msscbeerorderservice.repositories.BeerOrderRepository;
 import guru.springframework.msscbeerorderservice.services.BeerOrderManagerImpl;
@@ -20,14 +20,14 @@ import java.util.UUID;
 @RequiredArgsConstructor
 @Component
 @Slf4j
-public class BeerOrderStateChangeInterceptor extends StateMachineInterceptorAdapter<BeerOrderStatusEnum, BeerOrderEventsEnums> {
+public class BeerOrderStateChangeInterceptor extends StateMachineInterceptorAdapter<BeerOrderStatusEnum, BeerOrderEventEnum> {
 
     private final BeerOrderRepository beerOrderRepository;
 
     @Override
-    public void preStateChange(State<BeerOrderStatusEnum, BeerOrderEventsEnums> state, Message<BeerOrderEventsEnums> message,
-                               Transition<BeerOrderStatusEnum, BeerOrderEventsEnums> transition, StateMachine<BeerOrderStatusEnum,
-            BeerOrderEventsEnums> stateMachine) {
+    public void preStateChange(State<BeerOrderStatusEnum, BeerOrderEventEnum> state, Message<BeerOrderEventEnum> message,
+                               Transition<BeerOrderStatusEnum, BeerOrderEventEnum> transition, StateMachine<BeerOrderStatusEnum,
+            BeerOrderEventEnum> stateMachine) {
        log.debug("Pre-State Change !!");
 
         Optional.ofNullable(message)

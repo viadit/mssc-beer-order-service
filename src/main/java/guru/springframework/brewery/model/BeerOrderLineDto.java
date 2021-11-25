@@ -18,6 +18,8 @@ public class BeerOrderLineDto extends BaseItem{
     private Integer orderQuantity = 0;
     private BigDecimal price;
 
+    private Integer quantityAllocated;
+
     @Builder
     public BeerOrderLineDto(UUID id, Integer version, OffsetDateTime createdDate,
                             OffsetDateTime lastModifiedDate, UUID beerId, String beerName,
